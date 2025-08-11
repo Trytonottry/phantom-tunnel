@@ -39,8 +39,8 @@
 ## 🚀 Быстрый запуск
 
 ```bash
-git clone https://github.com/phantom-tunnel/untraceable.git
-cd untraceable
+git clone https://github.com/Trytonottry/phantom-tunnel
+cd phantom-tunnel
 cargo build --release
 ```
 📦 Поддерживаемые платформы 
