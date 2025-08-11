@@ -1,0 +1,10 @@
+[package]
+name = "phantom-gui"
+version = "0.1.0"
+
+[lib]
+name = "phantom_gui"
+crate-type = ["cdylib"]
+
+[dependencies]
+tauri = { version = "1.5", features = [] }

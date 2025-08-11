@@ -1,0 +1,10 @@
+{
+  "relays": [
+    "relay1.phantom.example",
+    "relay2.phantom.example"
+  ],
+  "obfuscation_profile": "youtube-like",
+  "transport": "quic",
+  "silent_mode": true,
+  "ai_enabled": true
+}

@@ -1,0 +1,48 @@
+name: Release Phantom Tunnel
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev libsodium-dev pkg-config
+
+      - name: Install Tauri
+        run: npm install -g @tauri-apps/cli
+
+      - name: Build
+        run: |
+          mkdir -p keys
+          echo "${{ secrets.RELEASE_KEY }}" > keys/release-key.ed25519
+          chmod 600 keys/release-key.ed25519
+          chmod +x scripts/release.sh
+          ./scripts/release.sh
+
+      - name: Upload Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/v${{ github.ref_name }}/phantom-tunnel-v*.tar.gz
+          generate_release_notes: true

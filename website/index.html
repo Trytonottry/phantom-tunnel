@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phantom Tunnel — Неуловимый туннель</title>
+  <meta name="description" content="Phantom Tunnel — обход DPI, белых списков, самоуничтожение, seed-восстановление, AGPL-3.0" />
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #e0e0e0;
+      --accent: #0066cc;
+      --muted: #666;
+      --card: #1a1a1a;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 24px;
+      margin: 20px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      margin: 10px 5px;
+      font-weight: bold;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .onion {
+      font-family: monospace;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Phantom Tunnel v6</h1>
+      <div class="tagline">Неуловимый. Самоуничтожающийся. Восстанавливающийся.</div>
+    </header>
+
+    <div class="card">
+      <h2>🔐 Что это?</h2>
+      <p>Phantom Tunnel — это инструмент для обхода тотальной цензуры и слежки. Он маскируется под легальный трафик (Telegram, Google Meet), самоуничтожается при угрозе и восстанавливается по seed-фразе.</p>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Скачать</h2>
+      <p>Выберите версию для вашей платформы:</p>
+      <a href="https://github.com/phantom-tunnel/untraceable/releases" class="btn">GitHub Releases</a>
+      <a href="ipfs://QmPhantomTunnelISO..." class="btn">IPFS</a>
+    </div>
+
+    <div class="card">
+      <h2>🧩 Особенности</h2>
+      <ul>
+        <li>Ghost Mode — инъекция в Telegram, Chrome</li>
+        <li>Self-Destruct при обнаружении</li>
+        <li>Восстановление по 24-словной seed-фразе</li>
+        <li>DNS / ICMP / P2P туннели</li>
+        <li>Live USB (Tails-подобный)</li>
+        <li>AGPL-3.0 — свобода для всех</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🕸️ Анонимные зеркала</h2>
+      <p>Доступны через:</p>
+      <p class="onion">Tor: <a href="http://phant0m...onion">phant0m...onion</a></p>
+      <p>IPFS: <a href="ipfs://Qm...">QmPhantom...</a></p>
+    </div>
+
+    <div class="card">
+      <h2>📢 Этика использования</h2>
+      <p>Phantom создан для защиты прав человека, свободы слова и доступа к информации. Не используйте его для цензуры, слежки или нарушения прав других.</p>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Phantom Tunnel. <a href="LICENSE">AGPL-3.0</a></p>
+      <p>PGP: <a href="pgp.txt">A3F1 29B4 ...</a></p>
+    </div>
+  </div>
+</body>
+</html>

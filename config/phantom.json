@@ -1,0 +1,6 @@
+{
+  "server": "wss://phantom.example:8443",
+  "sni": "cdn.google.com",
+  "host": "cdn.google.com",
+  "local_port": 1080
+}

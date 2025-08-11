@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  phantom:
+    build: .
+    container_name: phantom-tunnel
+    volumes:
+      - ./config:/app/config
+      - ./keys:/app/keys
+    network_mode: host
+    restart: unless-stopped
