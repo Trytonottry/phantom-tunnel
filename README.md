@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="https://i.imgur.com/PhantomLogo.png" width="120" alt="Phantom Tunnel Logo">
   <h1 align="center">Phantom Tunnel v6: The Untraceable</h1>
   <p align="center">
     Невидимый, самоуничтожающийся, восстанавливающийся туннель для обхода цензуры и слежки
@@ -7,7 +6,6 @@
 </p>
 
 [![GitHub Release](https://img.shields.io/github/v/release/phantom-tunnel/untraceable?include_prereleases&color=2196F3&label=Release)](https://github.com/phantom-tunnel/untraceable/releases)
-[![Build Status](https://github.com/phantom-tunnel/untraceable/actions/workflows/build.yml/badge.svg)](https://github.com/phantom-tunnel/untraceable/actions)
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri-purple.svg)](https://tauri.app)
 [![Built with Rust](https://img.shields.io/badge/built%20with-Rust-orange.svg)](https://rust-lang.org)
